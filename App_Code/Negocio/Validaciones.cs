@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Text.RegularExpressions;
 
-namespace AutoAgenciasCR.Negocio
+namespace AutoAgenciaCR_WebSite.App_Code.Negocio
 {
     public class Validaciones
     {
