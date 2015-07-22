@@ -104,7 +104,7 @@
 
                                         <%-- ================BOTON PARA LOGIN================ --%>									    
                                         <%--<button type="submit" class="btn btn-xl">Login</button>--%>
-                                        <asp:Button ID="btnLogin" runat="server" Text="Ingresar" OnClick="btnLogin_Click" />
+                                        <asp:Button ID="btnLogin" runat="server" Text="Ingresar" OnClick="btnLogin_Click" class="btn btn-xl"/>
 
 									
 								    </form>
