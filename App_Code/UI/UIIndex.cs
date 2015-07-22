@@ -10,13 +10,13 @@ namespace AutoAgenciaCR_WebSite.App_Code.UI
 
         private Negocio.Validaciones v;
         private Negocio.Administrador a;
-		
-        //public UIIndex()
-        //{
-        //    //
-        //    // TODO: Add constructor logic here
-        //    //
-        //}
+
+        public UIIndex()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
 
 		public Boolean ValidarLogin(String usuario, String password)
 		{

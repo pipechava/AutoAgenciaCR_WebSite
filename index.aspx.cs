@@ -5,18 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 //using System.Threading;
-
-namespace AutoAgenciaCR_WebSite
-{
+    
     public partial class index : System.Web.UI.Page
     {
 
-        private App_Code.UI.UIPrincipal p;
+
+        private AutoAgenciaCR_WebSite.App_Code.UI.UIIndex p;
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            p = new App_Code.UI.UIPrincipal();
+            p = new AutoAgenciaCR_WebSite.App_Code.UI.UIIndex();
 
         }
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -46,4 +45,3 @@ namespace AutoAgenciaCR_WebSite
             }
         }
     }
-}

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/index.aspx.cs" Inherits="index" CodeBehind="~/index.aspx.cs" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 
@@ -94,11 +94,13 @@
 							
 								    <form name="login" id="LoginForm" novalidate>
 									    <div class="form-group-sm">
-										    <input type="email" class="form-control" placeholder="Email *" id="txtUsuarioLogin" required data-validation-required-message="Ingrese su usuario">
+                                            <asp:TextBox ID="txtUsuarioLogin" runat="server" class="form-control" placeholder="Email *" required data-validation-required-message="Ingrese su usuario"></asp:TextBox>
+										    <%--<input type="email" class="form-control" placeholder="Email *" id="txtUsuarioLogin" required data-validation-required-message="Ingrese su usuario">--%>
 										    <p class="help-block text-danger"></p>
 									    </div>
 									    <div class="form-group">
-										    <input type="password" class="form-control" placeholder="Password *" id="txtPasswordLogin" required data-validation-required-message="Ingrese su contrasena.">
+                                            <asp:TextBox ID="txtPasswordLogin" runat="server" class="form-control" placeholder="Password *" required data-validation-required-message="Ingrese su contrasena."></asp:TextBox>
+										    <%--<input type="password" class="form-control" placeholder="Password *" id="txtPasswordLogin" required data-validation-required-message="Ingrese su contrasena.">--%>
 										    <p class="help-block text-danger"></p>
 									    </div>
 									    <div class="clearfix"></div>
@@ -343,8 +345,10 @@
         <!-- Use the modals below to showcase details about your Busqueda projects! -->
 	
 	    <!-- Modal -->
+		
+		<!-- ====POPUP==== -->
 					    <div id="myModal" class="modal fade" role="dialog">
-					      <div class="modal-dialog">
+					      <div class="modal-dialog modal-lg">
 
 						    <!-- Modal content-->
 						    <div class="modal-content">
@@ -353,8 +357,93 @@
 							    <h4 class="modal-title">Modal Header</h4>
 						      </div>
 						      <div class="modal-body">
-							    <p>Some text in the modal.</p>
+							  
+							  <!-- ====IMAGE SLIDER==== -->
+							  
+								<div class="row">
+								
+								<div class="col-lg-6">
+							    
+								<div id="carousel-example-generic" class="carousel slide" >
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								  </ol>
+								 
+								  <!-- Wrapper for slides -->
+								  <div class="container" style="width:400px;height:350px;overflow:hidden">
+								  <div class="carousel-inner">
+									<div class="item active">
+									  <img src="img/carro1.jpg" class="img-responsive" alt="...">
+									  <div class="carousel-caption">
+										  
+									  </div>
+									</div>
+									<div class="item">
+									  <img src="img/carro2.jpg" class="img-responsive" alt="...">
+									  <div class="carousel-caption">
+										  
+									  </div>
+									</div>
+									<div class="item">
+									  <img src="img/carro3.jpg" class="img-responsive" alt="...">
+									  <div class="carousel-caption">
+										  
+									  </div>
+									</div>
+								  </div>
+								  </div>
+								 
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div> <!-- Carousel -->
+								
+								</div>
+								
+								<div class="col-lg-4">
+								
+								Marca:
+								</br>
+								Modelo:
+								</br>
+								Ano:
+								</br>
+								Combistible:
+								</br>
+								Kilometraje:
+								</br>
+								Transmision:
+								</br>
+								Terminacion de Placa:
+								</br>
+							
+								
+								</div>
+								
+								
 						      </div>
+							  
+							  <br></br>
+							  
+							  <div class="row">
+							  
+							  <div class="col-md-4">
+							  
+							  <button type="button" class="btn btn-primary" >Agregar a Favoritos</button>
+							  
+							  </div>
+							  
+							  </div>
+							  
+							  <br></br>
+							  
 						      <div class="modal-footer">
 							    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						      </div>
@@ -362,6 +451,7 @@
 
 					      </div>
 					    </div>
+						</div>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
