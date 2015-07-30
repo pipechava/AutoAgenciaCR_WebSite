@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 using System.Configuration;
+using MySql.Data.MySqlClient;
 //using MySql.Data.MySqlClient;
 
 namespace AutoAgenciaCR_WebSite.App_Code.Negocio
@@ -23,7 +24,7 @@ namespace AutoAgenciaCR_WebSite.App_Code.Negocio
             //para leer datos de bd
             MySql.Data.MySqlClient.MySqlDataReader reader;
             String name;
-            String connString = "Data Source=localhost;Initial Catalog=test;Integrated Security=True;Uid=root;Pwd=mysql;port=3306";
+            String connString = "Data Source=localhost;Initial Catalog=test;Integrated Security=True;Uid=root;Pwd=root;port=3306";
             String query;
             
             conn = new MySql.Data.MySqlClient.MySqlConnection(connString);

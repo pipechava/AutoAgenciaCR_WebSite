@@ -20,7 +20,7 @@
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
-
+    <link href="css/custom.css" rel="stylesheet">
  
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -95,25 +95,29 @@
 								    <form name="login" id="LoginForm" novalidate>
 									    <div class="form-group-sm">
                                             <asp:TextBox ID="txtUsuarioLogin" runat="server" class="form-control" placeholder="Email *" required data-validation-required-message="Ingrese su usuario"></asp:TextBox>
-										    <%--<input type="email" class="form-control" placeholder="Email *" id="txtUsuarioLogin" required data-validation-required-message="Ingrese su usuario">--%>
+                                            <%--<input type="email" class="form-control" placeholder="Email *" id="txtUsuarioLogin" required data-validation-required-message="Ingrese su usuario">--%>
 										    <p class="help-block text-danger"></p>
 									    </div>
 									    <div class="form-group">
                                             <asp:TextBox ID="txtPasswordLogin" runat="server" class="form-control" placeholder="Password *" required data-validation-required-message="Ingrese su contrasena."></asp:TextBox>
-										    <%--<input type="password" class="form-control" placeholder="Password *" id="txtPasswordLogin" required data-validation-required-message="Ingrese su contrasena.">--%>
+                                            <%--<input type="password" class="form-control" placeholder="Password *" id="txtPasswordLogin" required data-validation-required-message="Ingrese su contrasena.">--%>
 										    <p class="help-block text-danger"></p>
 									    </div>
 									    <div class="clearfix"></div>
 									    <div id="success"></div>
 
-                                        <%-- ================BOTON PARA LOGIN================ --%>									    
+                                        <%-- ================BOTON PARA LOGIN================ --%>                                        
                                         <%--<button type="submit" class="btn btn-xl">Login</button>--%>
                                         <asp:Button ID="btnLogin" runat="server" Text="Ingresar" OnClick="btnLogin_Click" class="btn btn-xl"/>
 
-									
-								    </form>
+                                        
+
+                                        <%-- ================BOTON PARA LOGIN================ --%>                                        
+                                        <%--<button type="submit" class="btn btn-xl">Login</button>--%>
+                                        <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" class="btn-reg"></asp:Button>
+
+                                    </form>
 							    </div>				
-				
 					    </div>
 				    </center>
 			    </div>
