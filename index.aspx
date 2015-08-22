@@ -48,7 +48,7 @@
                     </button>
 				
 				
-				    <a class="nav navbar-nav navbar-right" href="index.html"><img src="img/logo.png" class="img-responsive" alt="Auto Agencia CR" style="width:253px;height:50px;"></a> 
+				    <a class="nav navbar-nav navbar-right" href="index.aspx"><img src="img/logo.png" class="img-responsive" alt="Auto Agencia CR" style="width:253px;height:50px;"></a> 
 				
 				
                     <!--<a class="navbar-brand page-scroll" href="#Login">Start Bootstrap</a>-->
@@ -84,7 +84,9 @@
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-lead-in">Bienvenido a Auto Agencia CR!</div>
-                    <div class="intro-heading">Login</div>
+
+                    <div></div>
+                    <asp:Label ID="Label2" runat="server" Text="LOGIN" class="intro-heading"></asp:Label>
 				    <center>
 					    <div class="row">
 		
@@ -112,9 +114,9 @@
 
                                         
 
-                                        <%-- ================BOTON PARA LOGIN================ --%>                                        
+                                        <%-- ================BOTON PARA registrarse================ --%>                                        
                                         <%--<button type="submit" class="btn btn-xl">Login</button>--%>
-                                        <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" class="btn-reg"></asp:Button>
+                                        <%--<asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" class="btn-reg"></asp:Button>--%>
 
                                     </form>
 							    </div>				
@@ -205,6 +207,18 @@
                         <h2 class="section-heading">Busqueda</h2>
                         <h3 class="section-subheading text-muted">Aqui se buscan los autos</h3>
                     </div>
+                </div>
+
+                <div>
+
+                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
+
+                    <asp:Literal ID="Literal1" runat="server">
+
+
+
+                    </asp:Literal>
+
                 </div>
 			
 			
